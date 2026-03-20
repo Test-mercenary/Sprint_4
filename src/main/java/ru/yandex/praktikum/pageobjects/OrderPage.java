@@ -104,14 +104,6 @@ public class OrderPage {
         driver.findElement(commentField).sendKeys(comment);
     }
 
-    public void clickCreateOrderButton() {
-        driver.findElement(createOrderButton).click();
-    }
-
-    public void clickConfirmButton() {
-        driver.findElement(confirmButton).click();
-    }
-
     public void fillFirstStep(String name, String surname, String address, String metro, String phone) {
         setName(name);
         setSurname(surname);
