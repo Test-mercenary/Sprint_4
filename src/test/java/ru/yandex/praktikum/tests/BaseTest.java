@@ -5,11 +5,11 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import ru.yandex.praktikum.Constants;
 
 public class BaseTest {
 
     protected WebDriver driver;
-    protected static final String BASE_URL = "https://qa-scooter.praktikum-services.ru/";
 
     @Before
     public void setUp() {
@@ -17,7 +17,7 @@ public class BaseTest {
         options.addArguments("--start-maximized");
 
         driver = new ChromeDriver(options);
-        driver.get(BASE_URL);
+        driver.get(Constants.BASE_URL);
     }
 
     @After
